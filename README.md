@@ -2,12 +2,23 @@
 
 Prompt for zsh that displays the current [tctx](https://github.com/jlegrone/tctx) context.
 
-zsh's robbyrussell theme
-![right prompt](right-prompt.png)
+- [Examples](#examples)
+- [Installation](#installation)
+  - [Oh My Zsh](#oh-my-zsh)
+  - [Powerlevel10k](#powerlevel10k)
+  - [Manual](#manual-git-clone)
+- [Customization](#customization)
 
-p10k theme
-![p10k staging](p10k-staging.png)
-![p10k prod](p10k-prod.png)
+### Examples
+
+**zsh's robbyrussell theme**
+
+![right prompt](docs/robyrussell-prompt.png)
+
+**p10k theme**
+
+![p10k staging](docs/p10k-staging.png)<br/>
+![p10k prod](docs/p10k-prod.png)
 
 ## Installation
 
