@@ -1,9 +1,13 @@
 # zsh-tctx
 
-Promp for zsh that displays the current
-[tctx](https://github.com/jlegrone/tctx) context.
+Prompt for zsh that displays the current [tctx](https://github.com/jlegrone/tctx) context.
 
+zsh's robbyrussell theme
 ![right prompt](right-prompt.png)
+
+p10k theme
+![p10k staging](p10k-staging.png)
+![p10k prod](p10k-prod.png)
 
 ## Installation
 
