@@ -9,7 +9,11 @@ function tctx_current_context {
   local TCTX_PROMPT=$(get_tctx_prompt)
 
   if [[ -n "$TCTX_PROMPT" ]]; then
-    RPROMPT="$TCTX_PROMPT"
+    if [[ -n "$ZSH_TCTX_PROMPT_BACKGROUND" ]]; then
+      RPROMPT="%{$BG[$ZSH_TCTX_PROMPT_BACKGROUND]%}$TCTX_PROMPT%{$reset_color%}"
+    else
+      RPROMPT="$TCTX_PROMPT%{$reset_color%}"
+    fi
   fi
 }
 

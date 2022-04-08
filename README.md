@@ -101,11 +101,27 @@ If you're using [powerlevel10k](https://github.com/romkatv/powerlevel10k)
 ## Customization
 
 If you'd rather have other colours, you can either change the source code or
-just change the following env vars to whatever suits you best:
+just change the following env vars in your `~/.profile` or `~/.zshrc` to whatever suits you best:
 
 ```sh
-ZSH_TCTX_PROMPT_PREFIX
-ZSH_TCTX_PROMPT_PREFIX_STYLE
-ZSH_TCTX_PROMPT_PROD_STYLE
-ZSH_TCTX_PROMPT_DEFAULT_STYLE
+export ZSH_TCTX_PROMPT_BACKGROUND=
+export ZSH_TCTX_PROMPT_PREFIX=
+export ZSH_TCTX_PROMPT_PREFIX_FOREGROUND=
+export ZSH_TCTX_PROMPT_PROD_FOREGROUND=
+export ZSH_TCTX_PROMPT_DEFAULT_FOREGROUND=
 ```
+
+For a list of colors, run in your terminal:
+```sh
+for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done
+```
+
+Current defaults:
+```sh
+export ZSH_TCTX_PROMPT_BACKGROUND=
+export ZSH_TCTX_PROMPT_PREFIX=tctx
+export ZSH_TCTX_PROMPT_PREFIX_FOREGROUND=255
+export ZSH_TCTX_PROMPT_PROD_FOREGROUND=009
+export ZSH_TCTX_PROMPT_DEFAULT_FOREGROUND=005
+```
+

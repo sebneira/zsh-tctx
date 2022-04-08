@@ -10,6 +10,10 @@ source ${0:h}/tctx-prompt.zsh
 function prompt_tctx() {
   TCTX_PROMPT=$(get_tctx_prompt)
   if [[ -n "$TCTX_PROMPT" ]]; then
-    p10k segment -t "$TCTX_PROMPT" 
+    if [[ -n "$ZSH_TCTX_PROMPT_BACKGROUND" ]]; then
+      p10k segment -b $ZSH_TCTX_PROMPT_BACKGROUND -t "$TCTX_PROMPT" 
+    else
+      p10k segment -t "$TCTX_PROMPT" 
+    fi
   fi
 }
