@@ -13,12 +13,11 @@ Prompt for zsh that displays the current [tctx](https://github.com/jlegrone/tctx
 
 **zsh's robbyrussell theme**
 
-![right prompt](docs/robyrussell-prompt.png)
+![zsh prompt](docs/robyrussell-prompt.png)
 
 **p10k theme**
 
-![p10k staging](docs/p10k-staging.png)<br/>
-![p10k prod](docs/p10k-prod.png)
+![p10k prompt](docs/p10k-prompt.png)
 
 ## Installation
 
